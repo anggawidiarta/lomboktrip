@@ -8,6 +8,7 @@
   },
   "rules": {
     "react/jsx-props-no-spreading": "off",
-    "@typescript-eslint/quotes": "off"
+    "@typescript-eslint/quotes": "off",
+    "@next/next/no-img-element": "off"
   }
 }
