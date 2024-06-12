@@ -18,14 +18,14 @@ const GetApp: React.FC = () => {
               type="button"
               title="App Store"
               icon="/apple.svg"
-              variant="btn_white"
+              variant="btn_white hover:bg-gray-200 duration-150 transition-all"
               full
             />
             <Button
               type="button"
               title="Play Store"
               icon="/android.svg"
-              variant="btn_dark_green_outline"
+              variant="btn_dark_green_outline hover:bg-green-50 duration-150 transition-all"
               full
             />
           </div>
