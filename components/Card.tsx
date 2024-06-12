@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,8 +11,16 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 
 const Card = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <section className="relative flex flex-col py-10 lg:py-20 ">
+    <section
+      className="relative flex flex-col py-10 lg:py-20"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="250"
+    >
       <Swiper
         pagination={{
           type: "fraction",
