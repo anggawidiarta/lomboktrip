@@ -9,14 +9,14 @@ const Navbar: React.FC = () => {
     <nav className="relative z-30 flex py-5 text-2xl text-white padding-container max-container flexBetween">
       <Link href="/" className="text-black">
         <p className="text-3xl poppins-bold">
-          TripIn<span className="text-blue-500">Lombok.</span>
+          TripIn<span className="text-green-50">Lombok.</span>
         </p>
       </Link>
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
           <li
             key={link.key}
-            className="text-gray-50 regular-16 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+            className="text-gray-50 font-normal hover:text-green-50 text-[1rem] flexCenter cursor-pointer pb-1.5 transition-all duration-150 hover:font-bold"
           >
             <a href={link.href}>{link.label}</a>
           </li>
@@ -24,10 +24,10 @@ const Navbar: React.FC = () => {
       </ul>
       <div className="hidden lg:flexCenter">
         <Button
-          title="Login"
+          title="Sign In"
           type="button"
-          variant="bg-green-50 text-xl"
-          icon="/user.svg"
+          variant="bg-green-50 text-xl py-1 px-3 hover:bg-green-700 transition-all duration-150"
+          icon="/mdi--user.svg"
         />
       </div>
       <div className="inline-block lg:hidden">
