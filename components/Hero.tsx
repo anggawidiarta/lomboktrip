@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero: React.FC = () => {
   return (
     <section
-      className="flex flex-col gap-20 py-12 pb-32 md:gap-28 lg:py-20 xl:flex-row "
+      className="flex flex-col gap-20 py-12 pb-16 md:gap-28 lg:py-20 xl:flex-row "
       aria-label="Hero Section"
     >
       <div className="hero-map"></div>
