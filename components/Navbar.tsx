@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
       </ul>
       <div className="hidden lg:flexCenter">
         <Button
-          text="Login"
+          title="Login"
           type="button"
           variant="bg-green-50 text-xl"
           icon="/user.svg"

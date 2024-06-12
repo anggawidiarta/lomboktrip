@@ -9,7 +9,7 @@ import { Pagination, Navigation } from "swiper/modules";
 
 const Card = () => {
   return (
-    <section className="relative flex flex-col py-10 lg:py-20">
+    <section className="relative flex flex-col py-10 lg:py-20 ">
       <Swiper
         pagination={{
           type: "fraction",
@@ -33,7 +33,7 @@ const Card = () => {
               <h5 className="text-sm text-gray-600 md:text-lg">
                 East Lombok, West Nusa Tenggara, Indonesia
               </h5>
-              <p className="mt-6 text-xs md:text-[16px] leading-normal font-normal text-white xl:mt-12 dark:text-gray-400 text-justify md:text-left ">
+              <p className="mt-6 text-xs md:text-[16px] leading-normal font-normal text-white xl:mt-12 dark:text-gray-400 text-justify md:text-left max-sm:line-clamp-5">
                 Sembalun Village, located on the eastern side of Lombok Island,
                 Indonesia, is a picturesque highland area renowned for its
                 stunning natural beauty and cultural richness. Nestled at the
@@ -45,12 +45,12 @@ const Card = () => {
               <div className="hidden gap-3 mt-6 xl:flex">
                 <a
                   href="#"
-                  className="block max-w-sm p-2 bg-white w-1/2 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                  className="block w-1/2 max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                 >
                   <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     Andres Fernando
                   </h5>
-                  <p className="text-sm font-normal text-gray-700 dark:text-gray-400 text-ellipsis">
+                  <p className="text-sm font-normal text-gray-700 dark:text-gray-400 text-ellipsis max-sm:line-clamp-5">
                     Sembalun Village in Lombok Island, Indonesia, is a hidden
                     gem with breathtaking landscapes. Nestled in the mountains,
                     it offers stunning views, vibrant culture, and serene hiking
@@ -59,12 +59,12 @@ const Card = () => {
                 </a>
                 <a
                   href="#"
-                  className="block max-w-sm p-2 bg-white border w-1/2 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                  className="block w-1/2 max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                 >
                   <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     Michelle Henderson
                   </h5>
-                  <p className="text-sm font-normal text-gray-700 dark:text-gray-400 text-ellipsis">
+                  <p className="text-sm font-normal text-gray-700 dark:text-gray-400 text-ellipsis max-sm:line-clamp-5">
                     Sembalun Village on Lombok Island, Indonesia, is absolutely
                     magical! The lush green hills and clear blue skies are like
                     something out of a dream. The hiking trails are incredible,
@@ -90,7 +90,7 @@ const Card = () => {
               <h5 className="text-sm text-gray-600 md:text-lg">
                 East Lombok, West Nusa Tenggara, Indonesia
               </h5>
-              <p className="mt-6 text-xs md:text-[16px] leading-normal font-normal text-white xl:mt-12 dark:text-gray-400 text-justify md:text-left ">
+              <p className="mt-6 text-xs md:text-[16px] leading-normal font-normal text-white xl:mt-12 dark:text-gray-400 text-justify md:text-left max-sm:line-clamp-5">
                 Sembalun Village, located on the eastern side of Lombok Island,
                 Indonesia, is a picturesque highland area renowned for its
                 stunning natural beauty and cultural richness. Nestled at the
@@ -102,7 +102,7 @@ const Card = () => {
               <div className="hidden gap-3 mt-6 xl:flex">
                 <a
                   href="#"
-                  className="block max-w-sm p-2 bg-white w-1/2 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                  className="block w-1/2 max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                 >
                   <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     Andres Fernando
@@ -116,7 +116,7 @@ const Card = () => {
                 </a>
                 <a
                   href="#"
-                  className="block max-w-sm p-2 bg-white border w-1/2 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                  className="block w-1/2 max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                 >
                   <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     Michelle Henderson
@@ -159,7 +159,7 @@ const Card = () => {
               <div className="hidden gap-3 mt-6 xl:flex">
                 <a
                   href="#"
-                  className="block max-w-sm p-2 bg-white w-1/2 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                  className="block w-1/2 max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                 >
                   <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     Andres Fernando
@@ -173,7 +173,7 @@ const Card = () => {
                 </a>
                 <a
                   href="#"
-                  className="block max-w-sm p-2 bg-white border w-1/2 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                  className="block w-1/2 max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                 >
                   <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     Michelle Henderson
@@ -216,7 +216,7 @@ const Card = () => {
               <div className="hidden gap-3 mt-6 xl:flex">
                 <a
                   href="#"
-                  className="block max-w-sm p-2 bg-white w-1/2 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                  className="block w-1/2 max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                 >
                   <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     Andres Fernando
@@ -230,7 +230,7 @@ const Card = () => {
                 </a>
                 <a
                   href="#"
-                  className="block max-w-sm p-2 bg-white border w-1/2 border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                  className="block w-1/2 max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                 >
                   <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     Michelle Henderson

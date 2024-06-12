@@ -11,19 +11,22 @@ const Hero: React.FC = () => {
 
       {/* Left */}
       <div className="relative z-20 flex flex-col flex-1 xl:w-1/2">
-        <Image
-          src="/camp.svg"
-          alt="camp"
-          width={50}
-          height={50}
-          className="absolute w-10 -left-[4px] -top-[40px]"
-        />
-        <h1 className="text-5xl font-semibold">Trip In Lombok</h1>
-        <p className="mt-6 text-gray-30 regular-16 xl:max-w-[520px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-          delectus perferendis veniam quasi iure eligendi doloribus quibusdam
-          nemo. Perferendis, neque. Sed illum amet quia quod. Itaque inventore
-          debitis et. Molestias nihil quos autem inventore eligendi?
+        <h1 className="text-5xl font-bold tracking-tight">
+          TripIn
+          <span className="transition-all duration-150 ease-in cursor-pointer text-green-50 hover:text-green-700">
+            Lombok
+          </span>
+        </h1>
+        <p className="mt-6 text-gray-30 regular-16 xl:max-w-[520px] text-justify">
+          <span className="font-medium transition-all duration-150 cursor-pointer text-green-50 hover:text-green-700">
+            TripInLombok
+          </span>{" "}
+          is your go-to travel companion for exploring the stunning island of
+          Lombok. Our website offers comprehensive guides, personalized
+          itineraries, and an easy booking system for accommodations, tours, and
+          activities. Whether you are seeking adventure, relaxation, or cultural
+          experiences, TripInLombok ensures a seamless and memorable journey.
+          Let us help you discover the magic of Lombok with ease and confidence.
         </p>
 
         <div className="flex flex-wrap gap-5 my-11">
