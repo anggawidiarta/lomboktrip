@@ -9,11 +9,15 @@ const Guide: React.FC = () => {
           We Are Here For You
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
-          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">
-            Discover Lombok Like Never Before
+          <h2 className="bold-40 lg:bold-64 xl:max-w-[450px]">
+            Discover{" "}
+            <span className="transition-all duration-150 cursor-pointer hover:font-extrabold text-green-50">
+              Lombok
+            </span>{" "}
+            Like Never Before
           </h2>
           <p className="regular-16 text-gray-30 xl:max-w-[520px] max-lg:text-justify">
-            At <span className="text-green-50 font-medium">TripInLombok</span>
+            At <span className="font-medium text-green-50">TripInLombok</span>
             , your travel experience is our top priority. We understand that
             planning a trip can be overwhelming, which is why we are committed
             to making your journey as seamless and enjoyable as possible. Our
