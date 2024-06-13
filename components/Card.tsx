@@ -19,6 +19,7 @@ const Card = () => {
       className="relative flex flex-col py-16 lg:py-20"
       data-aos="fade-up"
       data-aos-duration="1000"
+      data-aos-delay="300"
     >
       <Swiper
         pagination={{
