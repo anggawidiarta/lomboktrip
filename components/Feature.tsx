@@ -12,7 +12,7 @@ const FeatureItem: React.FC<FeatureItem> = ({ title, icon, description }) => {
   return (
     <li className="flex flex-col items-start flex-1 w-full">
       <div className="p-4 rounded-full lg:p-7 bg-green-50">
-        <Image src={icon} alt="map" width={28} height={28} />
+        <Image src={icon} alt="map" width={28} height={28} loading="lazy" />
       </div>
       <h2 className="mt-5 capitalize bold-20 lg:bold-32">{title}</h2>
       <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-[30px] lg:bg-none">

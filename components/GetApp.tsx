@@ -32,7 +32,13 @@ const GetApp: React.FC = () => {
         </div>
 
         <div className="flex items-center justify-end flex-1 max-sm:hidden">
-          <Image src="/phones.png" alt="phones" width={550} height={870} />
+          <Image
+            src="/phones.png"
+            alt="phones"
+            width={550}
+            height={870}
+            loading="lazy"
+          />
         </div>
       </div>
     </section>

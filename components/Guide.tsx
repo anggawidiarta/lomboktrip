@@ -43,6 +43,7 @@ const Guide: React.FC = () => {
           width={1440}
           height={425}
           className="object-cover max-h-[550px] object-center w-full rounded-3xl 2xl:rounded-5xl drop-shadow-lg shadow-slate-600"
+          loading="lazy"
         />
 
         <div className="absolute flex bg-white py-12 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:right-[5%] lg:top-20">
@@ -52,6 +53,7 @@ const Guide: React.FC = () => {
             width={16}
             height={158}
             className="w-auto h-full"
+            loading="lazy"
           />
           <div className="flex-col flexBetween">
             <div className="flex flex-col w-full">

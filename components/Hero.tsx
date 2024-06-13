@@ -85,7 +85,13 @@ const Hero: React.FC = () => {
               <p className="regular-16 text-green-50 lg:text-gray-800">
                 Location
               </p>
-              <Image src="/close.svg" alt="close" width={24} height={24} />
+              <Image
+                src="/close.svg"
+                alt="close"
+                width={24}
+                height={24}
+                loading="lazy"
+              />
             </div>
             <p className="text-white bold-20 lg:text-black">Rinjani, Lombok</p>
             <div className="mt-4 flexBetween">

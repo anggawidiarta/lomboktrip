@@ -16,7 +16,9 @@ const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
       }`}
       type={type}
     >
-      {icon && <Image src={icon} alt={title} width={24} height={24} />}
+      {icon && (
+        <Image src={icon} alt={title} width={24} height={24} loading="lazy" />
+      )}
       <label className="bold-16 whitespace-nowrap cursor-pointer">
         {title}
       </label>
