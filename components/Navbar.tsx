@@ -36,9 +36,10 @@ const Navbar: React.FC = () => {
           width="36px"
           height="36px"
           viewBox="0 0 24 24"
-          className="bg-green-300 shadow-sm cursor-pointer"
+          className="cursor-pointer group"
         >
           <path
+            className="transition-all duration-150 shadow-sm group-hover:stroke-green-50 "
             fill="none"
             stroke="black"
             strokeLinecap="round"
