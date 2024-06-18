@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+// zustand store example
 import { create } from "zustand";
 
 type Action = {
