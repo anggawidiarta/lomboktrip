@@ -10,7 +10,6 @@ import Card from "@/components/Card";
 import Guide from "@/components/Guide";
 import Feature from "@/components/Feature";
 import GetApp from "@/components/GetApp";
-import Footer from "@/components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +19,6 @@ const Home: NextPage = () => {
       <Guide />
       <Feature />
       <GetApp />
-      <Footer />
     </main>
   );
 };
