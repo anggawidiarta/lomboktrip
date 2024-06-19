@@ -23,8 +23,8 @@ const FooterColumn = ({ title, children }: FooterColumnProps) => {
 
 const Footer = () => {
   return (
-    <footer className="mb-5 flexCenter">
-      <div className="flex flex-col w-full gap-14">
+    <footer className="container flex flex-col mb-5 flexCenter max-container padding-container">
+      <div className="flex flex-col w-full gap-10">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
             <p className="text-3xl poppins-bold">
