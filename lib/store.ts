@@ -2,16 +2,22 @@
 // zustand store example
 import { create } from "zustand";
 
-type Action = {
-  count: number;
-  increment: () => void;
-  decrement: () => void;
+export type ThemeState = {
+  theme: boolean | string;
+  toggleTheme: () => void;
 };
 
-const useCountStore = create<Action>((set) => ({
-  count: 0,
-  increment: () => set((state) => ({ count: state.count + 1 })),
-  decrement: () => set((state) => ({ count: state.count - 1 })),
-  reset: () => set({ count: 0 }),
-  setCount: (count: number) => set({ count }),
+export const useThemeStore = create<ThemeState>((set) => ({
+  theme: false,
+  toggleTheme: () =>
+    set((state) => {
+      const newTheme = !state.theme;
+      if (localStorage.getItem("theme") === "true") {
+        localStorage.setItem("theme", "false");
+      } else {
+        localStorage.setItem("theme", "true");
+      }
+      localStorage.setItem("theme", newTheme.toString());
+      return { theme: newTheme };
+    }),
 }));
