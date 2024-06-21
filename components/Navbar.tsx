@@ -3,6 +3,7 @@ import React from "react";
 
 import { NAV_LINKS } from "@/lib/constant.index";
 import Button from "./Button";
+import DarkModeSwitcher from "./DarkModeSwitcher";
 
 const Navbar: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const Navbar: React.FC = () => {
           </li>
         ))}
       </ul>
+      <DarkModeSwitcher />
       <div className="hidden lg:flexCenter">
         <Button
           title="Sign In"
