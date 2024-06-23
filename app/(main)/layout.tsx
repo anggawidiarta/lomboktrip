@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Trip In Lombok",
@@ -22,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body>
+      <body className="dark:bg-black">
         <Navbar />
-        {children}
+        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Footer />
       </body>
     </html>
