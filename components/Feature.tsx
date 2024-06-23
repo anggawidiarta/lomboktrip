@@ -14,8 +14,8 @@ const FeatureItem: React.FC<FeatureItem> = ({ title, icon, description }) => {
       <div className="p-4 rounded-full lg:p-7 bg-green-50">
         <Image src={icon} alt="map" width={28} height={28} loading="lazy" />
       </div>
-      <h2 className="mt-5 capitalize bold-20 lg:bold-32">{title}</h2>
-      <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-[30px] lg:bg-none">
+      <h2 className="mt-5 capitalize bold-20 dark:text-white lg:bold-32">{title}</h2>
+      <p className="regular-16 mt-5 bg-white/80 dark:bg-transparent text-black dark:text-white  lg:mt-[30px] lg:bg-none">
         {description}
       </p>
     </li>
@@ -24,8 +24,8 @@ const FeatureItem: React.FC<FeatureItem> = ({ title, icon, description }) => {
 
 const Feature = () => {
   return (
-    <section className="flex flex-col w-full py-20 overflow-hidden bg-center bg-no-repeat flexCenter bg-feature-bg">
-      <h2 className="lg:text-[64px] text-[40px] font-bold text-center">
+    <section className="flex flex-col w-full py-20 overflow-hidden bg-center bg-no-repeat flexCenter bg-feature-bg dark:bg-none">
+      <h2 className="lg:text-[64px] text-[40px] font-bold text-center dark:text-white">
         Our{" "}
         <span className="transition-all duration-150 ease-in cursor-pointer text-green-50 hover:text-green-700">
           Features
