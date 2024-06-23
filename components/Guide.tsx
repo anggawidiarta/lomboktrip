@@ -5,18 +5,18 @@ const Guide: React.FC = () => {
   return (
     <section className="flex-col flexCenter">
       <div className="w-full pb-24">
-        <p className="mb-3 -mt-1 uppercase regular-18 text-green-50">
+        <p className="mb-3 -mt-1 uppercase regular-18 text-green-50 ">
           We Are Here For You
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
-          <h2 className="bold-40 lg:bold-64 xl:max-w-[450px]">
+          <h2 className="bold-40 lg:bold-64 xl:max-w-[450px] dark:text-white">
             Discover{" "}
             <span className="transition-all duration-150 cursor-pointer hover:font-extrabold text-green-50">
               Lombok
             </span>{" "}
             Like Never Before
           </h2>
-          <p className="regular-16 text-gray-30 xl:max-w-[520px] max-lg:text-justify">
+          <p className="regular-16 dark:text-white text-gray-30 xl:max-w-[520px] max-lg:text-justify">
             At <span className="font-medium text-green-50">TripInLombok</span>
             , your travel experience is our top priority. We understand that
             planning a trip can be overwhelming, which is why we are committed
