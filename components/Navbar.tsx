@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
           className="cursor-pointer group"
         >
           <path
-            className="transition-all duration-150 shadow-sm group-hover:stroke-green-50 "
+            className="transition-all duration-150 shadow-sm group-hover:stroke-green-50 dark:stroke-green-50 dark:group-hover:stroke-white"
             fill="none"
             stroke="black"
             strokeLinecap="round"
