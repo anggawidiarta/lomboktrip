@@ -7,17 +7,17 @@ const Hero: React.FC = () => {
       className="flex flex-col gap-20 py-12 pb-16 md:gap-28 lg:py-20 xl:flex-row "
       aria-label="Hero Section"
     >
-      <div className="hero-map"></div>
+      <div className="hero-map dark:bg-none"></div>
 
       {/* Left */}
       <div className="relative z-20 flex flex-col flex-1 xl:w-1/2">
-        <h1 className="text-5xl font-bold tracking-tight">
+        <h1 className="text-5xl font-bold tracking-tight dark:text-white">
           TripIn
           <span className="transition-all duration-150 ease-in cursor-pointer text-green-50 hover:text-green-700">
             Lombok
           </span>
         </h1>
-        <p className="mt-6 text-gray-30 regular-16 xl:max-w-[520px] text-justify">
+        <p className="mt-6 dark:text-white text-gray-30 regular-16 xl:max-w-[520px] text-justify">
           <span className="font-medium transition-all duration-150 cursor-pointer text-green-50 hover:text-green-700">
             TripInLombok
           </span>{" "}
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
                 />
               ))}
           </div>
-          <p className="cursor-pointer bold-16 lg:bold-20 text-blue-70">
+          <p className="cursor-pointer bold-16 lg:bold-20 dark:text-white hover:text-green-50 text-blue-70">
             198K
             <span className="ml-1 underline regular-16 lg:regular-20">
               Reviews
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
           </button>
           <button
             type="button"
-            className="py-2.5 px-5 flex items-center justify-center gap-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-green-50 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 fill-gray-20 hover:fill-green-50 transition-all duration-150"
+            className="dark:text-white fill-green-50 dark:fill-green-50 py-2.5 px-5 flex items-center justify-center gap-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200  hover:text-green-50 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700  hover:fill-green-50 transition-all duration-150"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,12 +79,10 @@ const Hero: React.FC = () => {
 
       {/* Right */}
       <div className="relative flex items-start flex-1">
-        <div className="relative z-20 w-[268px] flex-col gap-8 rounded-3xl bg-[#1f2937]  lg:bg-white lg:bg-opacity-10 backdrop-filter backdrop-blur-lg shadow-lg px-7 py-8">
+        <div className="relative z-20 w-[268px] flex-col gap-8 rounded-3xl bg-[#1f2937] lg:bg-white lg:bg-opacity-10 backdrop-filter backdrop-blur-lg shadow-lg px-7 py-8">
           <div className="flex flex-col">
             <div className="flexBetween">
-              <p className="regular-16 text-green-50 lg:text-gray-800">
-                Location
-              </p>
+              <p className="regular-16 text-green-50 ">Location</p>
               <Image
                 src="/close.svg"
                 alt="close"
@@ -93,19 +91,25 @@ const Hero: React.FC = () => {
                 loading="lazy"
               />
             </div>
-            <p className="text-white bold-20 lg:text-black">Rinjani, Lombok</p>
+            <p className="text-white bold-20 lg:text-black dark:lg:text-white">
+              Rinjani, Lombok
+            </p>
             <div className="mt-4 flexBetween">
               <div className="flex flex-col">
-                <p className="regular-16 text-green-50 lg:text-gray-800">
+                <p className="regular-16 text-green-50 dark:lg:text-green-50 lg:text-gray-800">
                   Distance
                 </p>
-                <p className="text-white bold-20 lg:text-black">127KM</p>
+                <p className="text-white bold-20 lg:text-black dark:lg:text-white">
+                  127KM
+                </p>
               </div>
               <div className="flex flex-col">
-                <p className="regular-16 text-green-50 lg:text-gray-800">
+                <p className="regular-16 text-green-50 dark:lg:text-green-50 lg:text-gray-800">
                   Time
                 </p>
-                <p className="text-white bold-20 lg:text-black">4 Hour</p>
+                <p className="text-white bold-20 lg:text-black dark:lg:text-white">
+                  4 Hour
+                </p>
               </div>
             </div>
           </div>
