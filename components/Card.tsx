@@ -27,7 +27,7 @@ const Card = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper h-[340px] lg:h-[400px] xl:h-[550px] shadow-md shadow-gray-400 rounded-3xl w-full bg-green-50 dark:bg-yellow-600"
+        className="mySwiper h-[340px] lg:h-[400px] xl:h-[550px] shadow-md shadow-gray-400 dark:shadow-none rounded-3xl w-full bg-green-50"
       >
         {DESTINATIONS.map((destination) => (
           <SwiperSlide key={destination.id}>
@@ -42,10 +42,10 @@ const Card = () => {
                 <h2 className="text-3xl font-bold tracking-tight text-gray-800 md:text-6xl dark:text-white">
                   {destination.title}
                 </h2>
-                <h5 className="text-sm text-gray-600 md:text-lg">
+                <h5 className="text-sm text-gray-600 dark:text-black md:text-lg">
                   {destination.location}
                 </h5>
-                <p className="mt-6 text-xs md:text-[16px] leading-normal font-normal text-white xl:mt-12 dark:text-gray-400 text-justify md:text-left max-sm:line-clamp-5">
+                <p className="mt-6 text-xs md:text-[16px] leading-normal font-normal text-white xl:mt-12 text-justify md:text-left max-sm:line-clamp-5">
                   {destination.description}
                 </p>
 
