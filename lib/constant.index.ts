@@ -74,7 +74,7 @@ export const FOOTER_CONTACT_INFO = {
 
 export const SOCIALS = {
   title: "Social Media",
-  links: ["/facebook.svg", "/instagram.svg", "/youtube.svg"],
+  links: ["/devicon--facebook.svg", "/skill-icons--instagram.svg", "/logos--youtube-icon.svg"],
 };
 
 // Destinations
